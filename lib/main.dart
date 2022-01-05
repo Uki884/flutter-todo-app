@@ -3,10 +3,12 @@ import 'package:todoapp/page/TodoListPage.dart';
 
 void main() {
   // 最初に表示するWidget
-  runApp(MyTodoApp());
+  runApp(const MyTodoApp());
 }
 
 class MyTodoApp extends StatelessWidget {
+  const MyTodoApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
